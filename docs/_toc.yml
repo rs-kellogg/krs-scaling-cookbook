@@ -4,4 +4,6 @@
 format: jb-book
 root: intro
 chapters:
-- file: kdc-sql
+- file: kdc-sql-queries
+- file: klc-datasets
+- file: data-workflow
