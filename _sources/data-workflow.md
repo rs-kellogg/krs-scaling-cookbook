@@ -1,14 +1,16 @@
 # Data Workflow
 
-## Query Athena
+Bash script + python code:
 
-## Process Extracts on KLC
+- Query Athena / Extract data
+- Clean and Process Extracts on KLC (in parallel)
+- Apply models / analyze data
+- Automation (bash, queries, conda)
+- Logging
+- Testing
 
-## Automation
 
-## Logging
 
-## Testing
 
 
 

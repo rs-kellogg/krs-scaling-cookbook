@@ -1,10 +1,13 @@
-# Kellogg Linux Cluster
+# Kellogg Data Cloud
 
 ## Accessing Datasets
 
-## Processing Datasets
+- AWS Athena, how to access and navigate -> Will
 
-## Monitor Jobs
+## Writing SQL Queries
 
-## Parallelization
+- SQL introduction (videos, pointers)
+- Efficient queries (numerator?)
+- Leveraging partitions for efficiency
+
 
