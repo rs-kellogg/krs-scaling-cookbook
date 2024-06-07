@@ -2,11 +2,15 @@
 
 Bash script + python code:
 
-- Query Athena
-- Process Extracts on KLC (in parallel)
-- Automation
+- Query Athena / Extract data
+- Clean and Process Extracts on KLC (in parallel)
+- Apply models / analyze data
+- Automation (bash, queries, conda)
 - Logging
 - Testing
+
+
+
 
 
 
