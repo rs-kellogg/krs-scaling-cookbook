@@ -1,7 +1,7 @@
 # Kellogg Linux Cluster
 
-- Accessing Datasets -> Traci
-- Loading data (DuckDB, Dataframes) -> Traci
-- Monitoring usage (cpu/memory) -> Will
-- Parallelizing jobs (cores, nodes) -> Will
-- Slurm for GPUs (and quest resources) -> Ambreen
+- Accessing KLC Datasets
+- Loading data (DuckDB, Dataframes)
+- Monitoring usage (memory)
+- Parallelizing jobs (cores, nodes)
+- Automation with scripts (including script args)

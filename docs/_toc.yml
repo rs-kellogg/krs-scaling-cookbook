@@ -2,8 +2,9 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
+root: welcome
 chapters:
-- file: kdc-sql-queries
+- file: introduction
+- file: kdc-datasets
 - file: klc-datasets
-- file: data-workflow
+- file: klc-gpus

@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../datawrangler"
+		},
+		{
+			"path": "../../krs-openllm-cookbook"
+		}
+	],
+	"settings": {}
+}
