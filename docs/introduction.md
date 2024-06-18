@@ -6,9 +6,9 @@ Accesing and processing large datasts. Features of replicability, including test
 :::{admonition} Data Workflow
 :class: note
 
-```{figure} ./images/data-workflow.png
+```{figure} ./images/data-workflow-intro.png
 ---
 width: 900px
-name: data-workflow
+name: data-workflow-intro
 ---
 ```
