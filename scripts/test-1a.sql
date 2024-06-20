@@ -1,0 +1,9 @@
+SELECT *
+FROM 
+    numerator.people
+
+
+
+
+    
+
