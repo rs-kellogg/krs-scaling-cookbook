@@ -127,6 +127,33 @@ WHERE majorcat_id = 'isc_gro_dai_cheese'
 ```
 :::
 
+
+:::{admonition} Which query is better?
+*Goal: select all users who have bought items from the "cheese" category*
+
+```sql
+SELECT DISTINCT FACT.user_id
+FROM standard_nmr_feed_fact_table AS FACT
+INNER JOIN
+    (SELECT *
+    FROM standard_nmr_feed_item_table
+    WHERE majorcat_id = 'isc_gro_dai_cheese') AS ITEM
+ON ITEM.item_id = FACT.item_id
+;
+```
+
+```sql
+SELECT FACT.*
+FROM standard_nmr_feed_fact_table AS FACT
+INNER JOIN
+    (SELECT *
+    FROM standard_nmr_feed_item_table) AS ITEM
+ON ITEM.item_id = FACT.item_id
+WHERE ITEM.majorcat_id = 'isc_gro_dai_cheese'
+;
+```
+:::
+
 :::{admonition} What is wrong with this query?
 *Goal: select all purchase facts*
 
