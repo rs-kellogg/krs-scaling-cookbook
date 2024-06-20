@@ -38,4 +38,4 @@ share/python-wheels/
 MANIFEST
 
 ## Data
-docs/merged_data.csv*
+docs/*csv*
