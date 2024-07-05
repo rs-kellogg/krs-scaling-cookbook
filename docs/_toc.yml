@@ -7,5 +7,6 @@ chapters:
 - file: introduction
 - file: kdc-datasets
 - file: klc-datasets
+- file: klc-processes
 - file: klc-gpus
 - file: takeaways
