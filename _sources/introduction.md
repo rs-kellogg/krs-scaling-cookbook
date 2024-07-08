@@ -8,7 +8,7 @@ When working with small or moderately sized datasets, we can often
 - Writing efficient queries for datasets on the Kellogg Data Cloud (KDC)
 - Loading and processing datasets on the Kellogg Linux Cluster (KLC)
 - Monitoring resource usage on KDC and KLC
-- Automating, testsing, and parallelizing workflows
+- Automating, testing, and parallelizing workflows
 :::
 
 :::{admonition} Data Workflow
