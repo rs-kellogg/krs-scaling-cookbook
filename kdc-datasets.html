@@ -18,12 +18,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
@@ -37,9 +37,9 @@
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
-  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="_static/doctools.js?v=9a2dae69"></script>
@@ -52,7 +52,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -139,6 +139,8 @@
         <div class="sidebar-primary-item">
 
   
+    
+  
 
 <a class="navbar-brand logo" href="welcome.html">
   
@@ -160,7 +162,7 @@
 
  <script>
  document.write(`
-   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass"></i>
     <span class="search-button__default-text">Search</span>
     <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
@@ -181,6 +183,7 @@
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Kellogg Data Cloud</a></li>
 <li class="toctree-l1"><a class="reference internal" href="klc-datasets.html">Kellogg Linux Cluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="klc-processes.html">KLC - Process Monitoring</a></li>
 <li class="toctree-l1"><a class="reference internal" href="klc-gpus.html">Scaling with GPUs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="takeaways.html">Final Thoughts</a></li>
 </ul>
@@ -284,7 +287,7 @@
       
       
       
-      <li><a href="_sources/kdc-datasets.md" target="_blank"
+      <li><a href="_sources/kdc-datasets.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -294,7 +297,7 @@
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.md</span>
+<span class="btn__text-container">.ipynb</span>
 </a>
 </li>
       
@@ -339,10 +342,10 @@
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
@@ -350,12 +353,14 @@ document.write(`
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -371,6 +376,16 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accessing-datasets">Accessing Datasets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-sql-queries">Writing SQL Queries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#automation-with-scripting">Automation with Scripting</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -387,19 +402,231 @@ document.write(`
 <figure class="align-default" id="data-workflow-kdc">
 <a class="reference internal image-reference" href="_images/data-workflow-kdc.png"><img alt="_images/data-workflow-kdc.png" src="_images/data-workflow-kdc.png" style="width: 900px;" /></a>
 </figure>
-<h2 class="rubric" id="accessing-datasets">Accessing Datasets</h2>
-<ul class="simple">
-<li><p>AWS Athena, how to access and navigate -&gt; Will</p></li>
-</ul>
-<h2 class="rubric" id="writing-sql-queries">Writing SQL Queries</h2>
-<ul class="simple">
-<li><p>SQL introduction (videos, pointers)</p></li>
-<li><p>Efficient queries (numerator?)</p></li>
-<li><p>Leveraging partitions for efficiency</p></li>
-<li><p>Automation with ODBC -&gt; Will</p></li>
-</ul>
-<h2 class="rubric" id="id1"></h2>
 </div>
+<section id="accessing-datasets">
+<h2>Accessing Datasets<a class="headerlink" href="#accessing-datasets" title="Link to this heading">#</a></h2>
+<div class="note admonition">
+<p class="admonition-title"><a class="reference external" href="https://www.kellogg.northwestern.edu/academics-research/research-support/computing/kellogg-data-cloud.aspx">KDC</a></p>
+<!-- ```{figure} ./images/KDC-1.png
+---
+width: 900px
+name: KDC-1
+---
+``` -->
+<figure class="align-default" id="kdc-2">
+<a class="reference internal image-reference" href="_images/KDC-2.png"><img alt="_images/KDC-2.png" src="_images/KDC-2.png" style="width: 900px;" /></a>
+</figure>
+</div>
+<p>Use your netid to log in on the <a class="reference external" href="https://nu-sso.awsapps.com/start/#/?tab=accounts">Northwestern AWS Access Portal</a></p>
+<div class="docutils">
+<div class="note admonition">
+<p class="admonition-title">Numerator Dataset</p>
+<p>For this workshop, we will be exploring consumer panel data in the <a class="reference external" href="https://www.numerator.com/">Numerator</a> dataset</p>
+<figure class="align-default" id="numerator-website">
+<a class="reference internal image-reference" href="_images/numerator-website.png"><img alt="_images/numerator-website.png" src="_images/numerator-website.png" style="width: 900px;" /></a>
+</figure>
+</div>
+</div>
+<div class="admonition-numerator-dataset-on-kdc-and-klc admonition">
+<p class="admonition-title">Numerator dataset on KDC and KLC</p>
+<figure class="align-default" id="numerator-s3">
+<a class="reference internal image-reference" href="_images/numerator-s3.png"><img alt="_images/numerator-s3.png" src="_images/numerator-s3.png" style="width: 900px;" /></a>
+</figure>
+</div>
+</section>
+<section id="writing-sql-queries">
+<h2>Writing SQL Queries<a class="headerlink" href="#writing-sql-queries" title="Link to this heading">#</a></h2>
+<div class="admonition-basic-structure-of-a-sql-statement admonition">
+<p class="admonition-title">Basic structure of a SQL statement</p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="o">&lt;</span><span class="k">column</span><span class="w"> </span><span class="n">expr</span><span class="o">&gt;</span><span class="w">        </span><span class="c1">-- required</span>
+<span class="k">FROM</span><span class="w"> </span><span class="o">&lt;</span><span class="k">table</span><span class="w"> </span><span class="n">expr</span><span class="o">&gt;</span><span class="w">           </span><span class="c1">-- required</span>
+<span class="k">JOIN</span><span class="w"> </span><span class="o">&lt;</span><span class="n">another</span><span class="w"> </span><span class="k">table</span><span class="o">&gt;</span><span class="w">        </span><span class="c1">-- optional</span>
+<span class="k">WHERE</span><span class="w"> </span><span class="o">&lt;</span><span class="nb">boolean</span><span class="w"> </span><span class="n">condition</span><span class="o">&gt;</span><span class="w">   </span><span class="c1">-- optional</span>
+<span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="o">&lt;</span><span class="n">columns</span><span class="o">&gt;</span><span class="w">          </span><span class="c1">-- optional</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="o">&lt;</span><span class="n">columns</span><span class="o">&gt;</span><span class="w">          </span><span class="c1">-- optional</span>
+<span class="p">;</span>
+</pre></div>
+</div>
+<p><a class="reference external" href="https://sites.northwestern.edu/researchcomputing/resource-guides/resource-guide-sql/">Northwestern Research Computing Guide to SQL</a></p>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Athena Query Console</p>
+<figure class="align-default" id="numerator-athena-1">
+<a class="reference internal image-reference" href="_images/numerator-athena-1.png"><img alt="_images/numerator-athena-1.png" src="_images/numerator-athena-1.png" style="width: 900px;" /></a>
+</figure>
+</div>
+<div class="admonition-sql-numerator-example-counting-rows admonition">
+<p class="admonition-title">SQL numerator example: counting rows</p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">standard_nmr_feed_fact_table</span>
+<span class="p">;</span><span class="w"> </span><span class="c1">-- As of 2024-06-19: 5,444,236,053</span>
+</pre></div>
+</div>
+<p>Response shows there are approximately 5.4 billion rows in this table</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The structure of your SQL query can dramatically impact efficiency. For large datasets a well structured query can dramatically improve speed. Sometimes it can make the difference between success and failure.</p>
+<p>Two important principles for efficiently using KDC datasets:</p>
+<ul class="simple">
+<li><p>Only select the data you need (both columns and rows)</p></li>
+<li><p>Use data partitions when they are available and relevant to your data needs</p></li>
+</ul>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Which query is more efficient?</p>
+<p><em>Goal: select all user_ids and their postal codes</em></p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="c1">-- Query 1</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="c1">-- selects all columns, including user_id and postal_code</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">standard_nmr_feed_people_table</span>
+<span class="p">;</span>
+</pre></div>
+</div>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="c1">-- Query 2</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="n">user_id</span><span class="p">,</span><span class="w"> </span><span class="n">postal_code</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">standard_nmr_feed_people_table</span>
+<span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<div class="toggle admonition">
+<p class="admonition-title">Answer</p>
+<ul class="simple">
+<li><p><em>Query 1</em>: Runtime 34 seconds, Data scanned 72.6 MB</p></li>
+<li><p><em>Query 2</em>: Runtime 5.4 seconds, Data scanned 44.4 MB</p></li>
+</ul>
+<p><span style="color:purple"><em>Select just the columns you need!</em></span></p>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">How much data will these queries scan (the entire table, part of the table)?</p>
+<p><em>Goal: select all items from the “books” sector</em></p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="c1">-- Query 1</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="o">*</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">standard_nmr_feed_item_table</span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">sector_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;isc_books&#39;</span><span class="w"> </span><span class="c1">-- this is a legitimate sector designation</span>
+<span class="p">;</span>
+</pre></div>
+</div>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="c1">-- Query 2</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="o">*</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">standard_nmr_feed_item_table</span>
+<span class="p">;</span><span class="w"> </span><span class="c1">-- pull all data, then post-process by filtering rows for sector_id = &#39;isc_books&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="c1">-- Query 3</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="o">*</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">standard_nmr_feed_item_table</span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">sector_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;books&#39;</span><span class="w"> </span><span class="c1">-- This is a typo, there is no &#39;books&#39; sector</span>
+<span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<div class="toggle admonition">
+<p class="admonition-title">Answer</p>
+<ul class="simple">
+<li><p><em>Query 1</em>: Run time 10.4 seconds, Data scanned 132.3 MB</p></li>
+<li><p><em>Query 2</em>: Run time 17 min 40 sec, Data scanned: 18.11 GB</p></li>
+<li><p><em>Query 3</em>: Run time 71 ms, Data scanned: None!</p></li>
+</ul>
+<p><span style="color:purple"><em>Use partitioned fields in your “WHERE” statement when possible!</em></span></p>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Which query is better?</p>
+<p>*Goal: select a sample of purchase fact rows for doing analysis</p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="c1">-- Query 1</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="n">FACT</span><span class="p">.</span><span class="o">*</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">standard_nmr_feed_fact_table</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">FACT</span>
+<span class="p">;</span><span class="w"> </span><span class="c1">-- download table and sample using code</span>
+</pre></div>
+</div>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="c1">-- Query 2</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="n">FACT</span><span class="p">.</span><span class="o">*</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">standard_nmr_feed_fact_table</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">FACT</span>
+<span class="k">LIMIT</span><span class="w"> </span><span class="mi">5000000</span><span class="w"> </span><span class="c1">-- take first 5 million rows</span>
+<span class="p">;</span>
+</pre></div>
+</div>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="c1">-- Query 3</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="n">FACT</span><span class="p">.</span><span class="o">*</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">standard_nmr_feed_fact_table</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">FACT</span>
+<span class="n">TABLESAMPLE</span><span class="w"> </span><span class="k">SYSTEM</span><span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="c1">-- random sampling</span>
+<span class="p">;</span>
+</pre></div>
+</div>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="c1">-- Query 4</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="n">FACT</span><span class="p">.</span><span class="o">*</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">standard_nmr_feed_fact_table</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">FACT</span>
+<span class="n">TABLESAMPLE</span><span class="w"> </span><span class="n">BERNOULLI</span><span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="c1">-- random sampling</span>
+<span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<div class="toggle admonition">
+<p class="admonition-title">Answer</p>
+<ul class="simple">
+<li><p><em>Query 1</em>: Not going to run this one – all the data are already on KLC…</p></li>
+<li><p><em>Query 2</em>: Run time 35.6 sec, Data scanned 1.26 GB</p></li>
+<li><p><em>Query 3</em>: Run time: 20.9 sec, Data scanned: 120.22 MB</p></li>
+<li><p><em>Query 4</em>: Run time 1 min 46 seconds, Data scanned: 271.26 GB (entire table)</p></li>
+</ul>
+</div>
+</section>
+<section id="automation-with-scripting">
+<h2>Automation with Scripting<a class="headerlink" href="#automation-with-scripting" title="Link to this heading">#</a></h2>
+<div class="important admonition">
+<p class="admonition-title">GUI vs. Scripting</p>
+<ul class="simple">
+<li><p>Graphical User Interfaces (GUIs) like the AWS Athena console are convenient for exploration and development, but not so great for reproducibility</p></li>
+</ul>
+<p>Advantages of scripts for reproducibility:</p>
+<ul class="simple">
+<li><p>Scripts store your workflow in a file as a sequence of commands.</p></li>
+<li><p>Scripts lay out your data workflow logic, including logging and testing</p></li>
+<li><p>Scripts can be executed on the command line, or with an automated scheduler.</p></li>
+<li><p>Scripts are just text files that can be put into version control</p></li>
+</ul>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Connect to KDC via code</p>
+<p>There are several ways to connect to KDC via code, including using the <a class="reference external" href="https://docs.aws.amazon.com/cli/latest/reference/athena/">AWS CLI</a> or using <a class="reference external" href="https://docs.aws.amazon.com/athena/latest/ug/connect-with-odbc.html">ODBC</a>. We’ve created a module for KLC that makes it easy to run SQL queries on KDC databases, including in parallel if desired</p>
+</div>
+<div class="note admonition">
+<p class="admonition-title">KDC utilities module</p>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="_images/kdcutils-1.png"><img alt="_images/kdcutils-1.png" src="_images/kdcutils-1.png" style="width: 900px;" /></a>
+</figure>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Run SQL queries on the command line</p>
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="_images/kdcutils-2.png"><img alt="_images/kdcutils-2.png" src="_images/kdcutils-2.png" style="width: 900px;" /></a>
+</figure>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Instead of “for loops” in code, use templates over partitioned fields</p>
+<figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="_images/kdcutils-3.png"><img alt="_images/kdcutils-3.png" src="_images/kdcutils-3.png" style="width: 900px;" /></a>
+</figure>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Template subsitution generates multiple queries</p>
+<figure class="align-default" id="id4">
+<a class="reference internal image-reference" href="_images/kdcutils-4.png"><img alt="_images/kdcutils-4.png" src="_images/kdcutils-4.png" style="width: 900px;" /></a>
+</figure>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Use bash scripts to create a reproducible and testable workflow</p>
+<figure class="align-default" id="id5">
+<a class="reference internal image-reference" href="_images/kdcutils-5.png"><img alt="_images/kdcutils-5.png" src="_images/kdcutils-5.png" style="width: 900px;" /></a>
+</figure>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Scale to multiple nodes when necessary</p>
+<figure class="align-default" id="id6">
+<a class="reference internal image-reference" href="_images/kdcutils-6.png"><img alt="_images/kdcutils-6.png" src="_images/kdcutils-6.png" style="width: 900px;" /></a>
+</figure>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -457,6 +684,23 @@ document.write(`
             
             
               
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accessing-datasets">Accessing Datasets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-sql-queries">Writing SQL Queries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#automation-with-scripting">Automation with Scripting</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
             
           </div>
           <footer class="bd-footer-content">
@@ -500,8 +744,8 @@ By Kellogg Research Support
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

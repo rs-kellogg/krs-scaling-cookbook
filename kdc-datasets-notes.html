@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Final Thoughts &#8212; Kellogg Research Support Scaling Cookbook</title>
+    <title>Kellogg Data Cloud &#8212; Kellogg Research Support Scaling Cookbook</title>
   
   
   
@@ -57,10 +57,9 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'takeaways';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'kdc-datasets-notes';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Scaling with GPUs" href="klc-gpus.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -123,6 +122,8 @@
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -178,13 +179,13 @@
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kdc-datasets.html">Kellogg Data Cloud</a></li>
 <li class="toctree-l1"><a class="reference internal" href="klc-datasets.html">Kellogg Linux Cluster</a></li>
 <li class="toctree-l1"><a class="reference internal" href="klc-processes.html">KLC - Process Monitoring</a></li>
 <li class="toctree-l1"><a class="reference internal" href="klc-gpus.html">Scaling with GPUs</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Final Thoughts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="takeaways.html">Final Thoughts</a></li>
 </ul>
 
     </div>
@@ -256,7 +257,7 @@
       
       
       
-      <li><a href="https://github.com/rs-kellogg/krs-scaling-cookbook/issues/new?title=Issue%20on%20page%20%2Ftakeaways.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/rs-kellogg/krs-scaling-cookbook/issues/new?title=Issue%20on%20page%20%2Fkdc-datasets-notes.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -286,7 +287,7 @@
       
       
       
-      <li><a href="_sources/takeaways.md" target="_blank"
+      <li><a href="_sources/kdc-datasets-notes.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -357,7 +358,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -368,11 +371,21 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Final Thoughts</h1>
+    <h1>Kellogg Data Cloud</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accessing-datasets">Accessing Datasets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-sql-queries">Writing SQL Queries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#automation-with-scripting">Automation with Scripting</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -382,24 +395,149 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="final-thoughts">
-<h1>Final Thoughts<a class="headerlink" href="#final-thoughts" title="Link to this heading">#</a></h1>
-<div class="important admonition">
-<p class="admonition-title">Working with Large Data</p>
-<ul class="simple">
-<li><p>Not all SQL statements are the same, even if they eventually return the same results.</p></li>
-<li><p>Structure your data workflow for efficiency</p></li>
-<li><p>Automate and test your data workflow using scripts</p></li>
-<li><p>Monitor resource usage on KDC and KLC</p></li>
-<li><p>Parallelize your workflow when time to completion matters</p></li>
-</ul>
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="kellogg-data-cloud">
+<h1>Kellogg Data Cloud<a class="headerlink" href="#kellogg-data-cloud" title="Link to this heading">#</a></h1>
 <div class="note admonition">
 <p class="admonition-title">Data Workflow</p>
-<figure class="align-default" id="data-workflow">
-<a class="reference internal image-reference" href="_images/data-workflow-intro.png"><img alt="_images/data-workflow-intro.png" src="_images/data-workflow-intro.png" style="width: 900px;" /></a>
+<figure class="align-default" id="data-workflow-kdc">
+<a class="reference internal image-reference" href="_images/data-workflow-kdc.png"><img alt="_images/data-workflow-kdc.png" src="_images/data-workflow-kdc.png" style="width: 900px;" /></a>
 </figure>
 </div>
+<section id="accessing-datasets">
+<h2>Accessing Datasets<a class="headerlink" href="#accessing-datasets" title="Link to this heading">#</a></h2>
+<div class="note admonition">
+<p class="admonition-title"><a class="reference external" href="https://www.kellogg.northwestern.edu/academics-research/research-support/computing/kellogg-data-cloud.aspx">KDC</a></p>
+<!-- ```{figure} ./images/KDC-1.png
+---
+width: 900px
+name: KDC-1
+---
+``` -->
+<figure class="align-default" id="kdc-2">
+<a class="reference internal image-reference" href="_images/KDC-2.png"><img alt="_images/KDC-2.png" src="_images/KDC-2.png" style="width: 900px;" /></a>
+</figure>
+<p>Use your netid to log in on the <a class="reference external" href="https://nu-sso.awsapps.com/start/#/?tab=accounts">Northwestern AWS Access Portal</a></p>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Numerator Dataset</p>
+<p>For this workshop, we will be exploring consumer panel data in the <a class="reference external" href="https://www.numerator.com/">Numerator</a> dataset</p>
+<figure class="align-default" id="numerator-website">
+<a class="reference internal image-reference" href="_images/numerator-website.png"><img alt="_images/numerator-website.png" src="_images/numerator-website.png" style="width: 900px;" /></a>
+</figure>
+</div>
+<div class="admonition-numerator-dataset-on-kdc-and-klc admonition">
+<p class="admonition-title">Numerator dataset on KDC and KLC</p>
+<figure class="align-default" id="numerator-s3">
+<a class="reference internal image-reference" href="_images/numerator-s3.png"><img alt="_images/numerator-s3.png" src="_images/numerator-s3.png" style="width: 900px;" /></a>
+</figure>
+</div>
+</section>
+<section id="writing-sql-queries">
+<h2>Writing SQL Queries<a class="headerlink" href="#writing-sql-queries" title="Link to this heading">#</a></h2>
+<!-- - KDC intro and access (videos)
+- SQL introduction (videos, pointers)
+- Efficient queries (partitions, select columns, joins)
+- Leveraging partitions for efficiency -->
+<div class="admonition-basic-structure-of-a-sql-statement admonition">
+<p class="admonition-title">Basic structure of a SQL statement</p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="o">&lt;</span><span class="k">column</span><span class="w"> </span><span class="n">expr</span><span class="o">&gt;</span><span class="w">        </span><span class="c1">-- required</span>
+<span class="k">FROM</span><span class="w"> </span><span class="o">&lt;</span><span class="k">table</span><span class="w"> </span><span class="n">expr</span><span class="o">&gt;</span><span class="w">           </span><span class="c1">-- required</span>
+<span class="k">JOIN</span><span class="w"> </span><span class="o">&lt;</span><span class="n">another</span><span class="w"> </span><span class="k">table</span><span class="o">&gt;</span><span class="w">        </span><span class="c1">-- optional</span>
+<span class="k">WHERE</span><span class="w"> </span><span class="o">&lt;</span><span class="nb">boolean</span><span class="w"> </span><span class="n">condition</span><span class="o">&gt;</span><span class="w">   </span><span class="c1">-- optional</span>
+<span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="o">&lt;</span><span class="n">columns</span><span class="o">&gt;</span><span class="w">          </span><span class="c1">-- optional</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="o">&lt;</span><span class="n">columns</span><span class="o">&gt;</span><span class="w">          </span><span class="c1">-- optional</span>
+<span class="p">;</span>
+</pre></div>
+</div>
+<p><a class="reference external" href="https://sites.northwestern.edu/researchcomputing/resource-guides/resource-guide-sql/">Northwestern Research Computing Guide to SQL</a></p>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Athena Query Console</p>
+<figure class="align-default" id="numerator-athena-1">
+<a class="reference internal image-reference" href="_images/numerator-athena-1.png"><img alt="_images/numerator-athena-1.png" src="_images/numerator-athena-1.png" style="width: 900px;" /></a>
+</figure>
+</div>
+<div class="admonition-sql-numerator-example-counting-rows admonition">
+<p class="admonition-title">SQL numerator example: counting rows</p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">standard_nmr_feed_fact_table</span>
+<span class="p">;</span><span class="w"> </span><span class="c1">-- As of 2024-06-19: 5444236053</span>
+</pre></div>
+</div>
+<p>Response shows there are approximately 5.4 billion rows in this table</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The structure of your SQL query can dramatically impact efficiency. For large datasets a well structured query can dramatically improve speed. Sometimes it can make the difference between success and failure.</p>
+</div>
+<div class="admonition-which-query-is-better admonition">
+<p class="admonition-title">Which query is better?</p>
+<p><em>Goal: select all users and their postal codes</em></p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">standard_nmr_feed_person_table</span>
+<span class="p">;</span>
+</pre></div>
+</div>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="n">user_id</span><span class="p">,</span><span class="w"> </span><span class="n">postal_code</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">standard_nmr_feed_person_table</span>
+<span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition-how-much-data-will-be-scanned admonition">
+<p class="admonition-title">How much data will be scanned?</p>
+<p><em>Goal: select all items from the “cheese” category</em></p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">standard_nmr_feed_item_table</span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">majorcat_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;isc_gro_dai_cheese&#39;</span>
+<span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition-which-query-is-better admonition">
+<p class="admonition-title">Which query is better?</p>
+<p><em>Goal: select all users who have bought items from the “cheese” category</em></p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">FACT</span><span class="p">.</span><span class="n">user_id</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">standard_nmr_feed_fact_table</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">FACT</span>
+<span class="k">INNER</span><span class="w"> </span><span class="k">JOIN</span>
+<span class="w">    </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span>
+<span class="w">    </span><span class="k">FROM</span><span class="w"> </span><span class="n">standard_nmr_feed_item_table</span>
+<span class="w">    </span><span class="k">WHERE</span><span class="w"> </span><span class="n">majorcat_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;isc_gro_dai_cheese&#39;</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">ITEM</span>
+<span class="k">ON</span><span class="w"> </span><span class="n">ITEM</span><span class="p">.</span><span class="n">item_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FACT</span><span class="p">.</span><span class="n">item_id</span>
+<span class="p">;</span>
+</pre></div>
+</div>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="n">FACT</span><span class="p">.</span><span class="o">*</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">standard_nmr_feed_fact_table</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">FACT</span>
+<span class="k">INNER</span><span class="w"> </span><span class="k">JOIN</span>
+<span class="w">    </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span>
+<span class="w">    </span><span class="k">FROM</span><span class="w"> </span><span class="n">standard_nmr_feed_item_table</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">ITEM</span>
+<span class="k">ON</span><span class="w"> </span><span class="n">ITEM</span><span class="p">.</span><span class="n">item_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FACT</span><span class="p">.</span><span class="n">item_id</span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">ITEM</span><span class="p">.</span><span class="n">majorcat_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;isc_gro_dai_cheese&#39;</span>
+<span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition-what-is-wrong-with-this-query admonition">
+<p class="admonition-title">What is wrong with this query?</p>
+<p><em>Goal: select all purchase facts</em></p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">standard_nmr_feed_fact_table</span>
+<span class="p">;</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="automation-with-scripting">
+<h2>Automation with Scripting<a class="headerlink" href="#automation-with-scripting" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Athena CLI</p></li>
+<li><p>Python SDK</p></li>
+<li><p>Command line arguments</p></li>
+<li><p>Testing and logging</p></li>
+<li><p>Parallelizing Athena queries</p></li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -432,21 +570,29 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="klc-gpus.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Scaling with GPUs</p>
-      </div>
-    </a>
 </div>
                 </footer>
               
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accessing-datasets">Accessing Datasets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-sql-queries">Writing SQL Queries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#automation-with-scripting">Automation with Scripting</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
