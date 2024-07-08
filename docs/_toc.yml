@@ -7,6 +7,8 @@ chapters:
 - file: introduction
 - file: kdc-datasets
 - file: klc-datasets
+- file: flat_file
+- file: duckdb
 - file: klc-processes
 - file: klc-gpus
 - file: takeaways
