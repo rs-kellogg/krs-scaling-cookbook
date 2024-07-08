@@ -471,8 +471,9 @@ name: KDC-1
 <p>The structure of your SQL query can dramatically impact efficiency. For large datasets a well structured query can dramatically improve speed. Sometimes it can make the difference between success and failure.</p>
 <p>Two important principles for efficiently using KDC datasets:</p>
 <ul class="simple">
-<li><p>Only select the data you need (both columns and rows)</p></li>
-<li><p>Use data partitions when they are available and relevant to your data needs</p></li>
+<li><p>Only select the columns you need</p></li>
+<li><p>Only select the rows you need</p></li>
+<li><p>Use field partitions in your “WHERE” clause when possible</p></li>
 </ul>
 </div>
 <div class="tip admonition">
